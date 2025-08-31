@@ -1,8 +1,22 @@
 {
-	"folders": [
-		{
-			"path": "."
-		}
-	],
-	"settings": {}
+  "folders": [
+    {
+      "name": "Azure Video Indexer Python",
+      "path": "."
+    }
+  ],
+  "settings": {
+    "python.pythonPath": "python3",
+    "files.exclude": {
+      "**/__pycache__": true,
+      "**/*.pyc": true,
+      "**/output": false,
+      "**/.DS_Store": true
+    },
+    "editor.tabSize": 4,
+    "editor.formatOnSave": true
+  },
+  "extensions": {
+    "recommendations": ["ms-python.python", "ms-toolsai.jupyter"]
+  }
 }
