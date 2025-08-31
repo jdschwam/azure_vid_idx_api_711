@@ -11,11 +11,16 @@
 
 import requests
 import json
+import os
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv()
 
 # Azure Search service details
-service_name = "your-search-service-name"
+service_name = os.getenv("AZURE_SEARCH_SERVICE_NAME")
 api_version = "2021-04-30-Preview"
-api_key = "your-api-key"
+api_key = os.getenv("AZURE_SEARCH_API_KEY")
 
 # Endpoint URL
 endpoint = f"https://{service_name}.search.windows.net/indexes?api-version={api_version}"
